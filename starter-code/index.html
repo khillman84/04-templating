@@ -21,8 +21,10 @@
     <script id="article-template" type="text/x-handlebars-template">
       <article class="clearfix" data-author="{{author}}" data-category='{{category}}'>
         <h2>{{title}}</h2>
-        <h4><a href='{{authorUrl}}'>{{author}}</a><h4>
-        <p>{{publishedOn}}</p>
+        <div class="byline">
+        <address><a href='{{authorUrl}}'>{{author}}</a></address>
+        <p>{{publishStatus}}</p>
+        </div>
         {{{body}}}
       </article>
     </script>
